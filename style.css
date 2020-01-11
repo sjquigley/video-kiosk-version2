@@ -1,0 +1,20 @@
+[data-new-window] {
+    display: none;    
+    
+} 
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding-left: 20px;
+}
+
+.grid-container > div {
+  background-color: black;
+  border: 3px solid black
+      ;
+  text-align: center;
+  font-size: 30px;
+}

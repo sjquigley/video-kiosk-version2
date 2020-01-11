@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  [data-new-window] {
-    display: none;
-} 
- 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: black;
-  padding: 10px;
-}
+    <title>Steve's Second Go Video Kiosk</title>
+    <link href="style.css" rel="stylesheet" />
+    </head>
 
-.grid-container > div {
-  background-color: black;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
-}
-    
-    </style> 
  
 <body style="background-color:black;">
+      <script src="script.js"></script>
     
     <h1><font color="white">Video Kiosk</font></h1>
 
@@ -39,63 +23,39 @@
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-    <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
+    <a href="#" onclick="open_in_new_window('second_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
         
-    <div id="html_contents" data-new-window> <!-- data-new-window is important -->
+    <div id="second_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-         <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
+         <a href="#" onclick="open_in_new_window('third_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
         
-        <div id="html_contents" data-new-window> <!-- data-new-window is important -->
+        <div id="third_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-           <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        <div id="html_contents" data-new-window> <!-- data-new-window is important -->
+           <a href="#" onclick="open_in_new_window('fourth_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
+        <div id="fourth_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-           <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        <div id="html_contents" data-new-window> <!-- data-new-window is important -->
+           <a href="#" onclick="open_in_new_window('fifth_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
+        <div id="fifth_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-         <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        <div id="html_contents" data-new-window> <!-- data-new-window is important -->
+         <a href="#" onclick="open_in_new_window('sixth_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
+        <div id="sixth_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
    
-    
-    <script>
-    
-    
-    function open_in_new_window(id, new_page_title, features) {
-    var new_window;
-
-    if(features !== undefined && features !== '') {
-    new_window = window.open('', '_blank', features);
-    }
-    else {
-        new_window = window.open('', '_blank');
-    }
-
-    var html_contents = document.getElementById(id);
-    if(html_contents !== null) {
-        new_window.document.write('<!doctype html><html><head><title>' + new_page_title + '</title><meta charset="UTF-8" /></head><body>' + html_contents.innerHTML + '</body></html>');
-    }
-}
-    
-    </script>
-    
-    
-    
-
+ 
 </body>
 </html>
