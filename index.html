@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Steve's Second Go Video Kiosk</title>
+    <title>Steve's Second Go Video Kiosk!</title>
     <link href="style.css" rel="stylesheet" />
     </head>
 
- 
+
 <body style="background-color:black;">
       <script src="script.js"></script>
-    
+
     <h1><font color="white">Video Kiosk</font></h1>
 
     <h4><font color="white">Please select a video</font></h4>
-    
+
     <div class="grid-container">
 
      <a href="#" onclick="open_in_new_window('html_contents', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        
+
 <div id="html_contents" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
-        
+
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
     <a href="#" onclick="open_in_new_window('second_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        
+
     <div id="second_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
          <a href="#" onclick="open_in_new_window('third_window', 'MyTitle', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=1080,height=800');"><img border="0" alt="Write here" src="1.jpg" width="360" height="270"></a>
-        
+
         <div id="third_window" data-new-window> <!-- data-new-window is important -->
     <video controls style="width: 100%; height: auto;">
         <source src="cactus.mp4" type="video/mp4" />
@@ -55,7 +55,7 @@
         <source src="cactus.mp4" type="video/mp4" />
     </video>
 </div>
-   
- 
+
+
 </body>
 </html>
